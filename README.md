@@ -55,11 +55,8 @@ Before you get started, ensure you have the following:
 ## Usage
 
 1. Start a chat with your Telegram bot on the Telegram app.
-
 2. Send a message to the bot to initiate the interaction.
-
 3. Follow the bot's prompts to specify the testnet and the amount of PUSH Tokens you want.
-
 4. The bot will guide you through the transaction process and provide you with the PUSH Tokens.
 
 ## Contributing
@@ -67,17 +64,13 @@ Before you get started, ensure you have the following:
 We welcome contributions from the community. Whether you'd like to fix a bug, add a new feature, or improve documentation, please follow these steps:
 
 1. Fork the repository.
-
 2. Create a new branch for your feature or bug fix.
-
 3. Make your changes and commit them.
-
 4. Push your changes to your fork.
-
 5. Submit a pull request to the main repository.
 
 
-We hope you find the PUSH Tokens Telegram Bot useful and enjoy experimenting with PUSH Tokens on the Sepolia testnets!
+We hope you find the PUSH Tokens Telegram Bot useful and enjoy experimenting with PUSH Tokens on the Sepolia testnet!
 
 
 ## Contact

@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Welcome to the PUSH Tokens Telegram Faucet repository! This Telegram bot allows users to obtain PUSH Tokens on the Sepolia testnets. It is built using ethers.js, Node.js, and the Telegram Bot API. Whether you're a developer looking to experiment with PUSH Tokens or simply curious about the process, this bot will make it easy for you to get started.
+Welcome to the PUSH Tokens Telegram Faucet repository! This Telegram bot allows users to obtain PUSH Tokens on the Sepolia testnet. It is built using ethers.js, Node.js, and the Telegram Bot API. Whether you're a developer looking to experiment with PUSH Tokens or simply curious about the process, this bot will make it easy for you to get started.
 
 ## Features
 

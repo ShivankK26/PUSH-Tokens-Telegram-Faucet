@@ -42,8 +42,11 @@ Before you get started, ensure you have the following:
 4. Create a `.env` file in the project root and add your Telegram Bot Token and Ethereum wallet address.
 
    ```dotenv
-   BOT_TOKEN=your_telegram_bot_token
-   ETHEREUM_WALLET_ADDRESS=your_ethereum_wallet_address
+   BOT_TOKEN=
+   FAUCET_AMOUNT=
+   PRIVATE_KEY=
+   PUSH_TOKEN_ADDRESS=
+   ETH_RPC_SEPOLIA=
    ```
 
 5. Start the bot.

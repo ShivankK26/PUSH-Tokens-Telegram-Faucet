@@ -52,7 +52,7 @@ Before you get started, ensure you have the following:
 5. Start the bot.
 
    ```bash
-   node index.js
+   node script.js
    ```
 
 ## Usage

@@ -1,7 +1,7 @@
 require('dotenv').config()
 const TelegramBot = require('node-telegram-bot-api')
 const { ethers } = require('ethers')
-const Bot = TelegramBot(process.env.BOT_TOKEN, { polling: true })
+const Bot = new TelegramBot(process.env.BOT_TOKEN, { polling: true })
 
 
 
@@ -22,7 +22,7 @@ const contractABI = [{
 const pushContract = new ethers.Contract(process.env.PUSH_TOKEN_ADDRESS, contractABI, wallet)
 
 
-Bot.on('message', (msg) =>{
+Bot.on('message', (msg: { chat: { id: any } }) =>{
     const chatId = msg.chat.id;
 
     Bot.sendMessage(chatId, "Welcome to the PushBot. Do you want some tokens? 🤔");
@@ -30,4 +30,14 @@ Bot.on('message', (msg) =>{
 });
 
 
-Bot.onText(/\/sendpushtokens (.+)/, async())
+Bot.onText(/\/sendpushtokens (.+)/, async(msg: { chat: { id: any } }, match: any) =>{
+    const chatId = msg.chat.id;
+    const recepientAddress = match[1]; // Wallet address
+    const amountToSend = ethers.utils.parseUnits('10', 18); // PUSH Tokens to send
+
+    try {
+        const tx = await pushContract.transfer(recepientAddress, amountToSend, { gasLimit: 200000 })
+    } catch (error) {
+        Bot.sendMessage(chatId, `Error: ${error.message}`)
+    }
+})
